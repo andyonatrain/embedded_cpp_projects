@@ -13,11 +13,6 @@ void loop() {
     Serial.print("Tick ");
     Serial.println(tickCount);
     lastTick += 250;
-    Serial.print("now=");
-    Serial.print(currentMillis);
-    Serial.print(" scheduled=");
-    Serial.println(lastTick);
-    delay(600);
   }
 
 }
