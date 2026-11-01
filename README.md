@@ -1,5 +1,6 @@
-# projectT
-Project I'm building in C++
+# embedded_cpp_projects
+C++ projects
+Small C++ examples for non-blocking timing on microcontrollers.
 
 ## Clock exercise
 
