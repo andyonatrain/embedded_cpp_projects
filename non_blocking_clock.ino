@@ -1,7 +1,7 @@
 unsigned long currentMillis = 0;
 unsigned long lastTick = 0;
 unsigned long tickCount = 0;
-const unsigned long tempo = 120;
+const unsigned long tempo = 100;
 const unsigned long subdivisionsPerBeat = 4;
 unsigned long stepInterval = 0;
 unsigned long stepIndex = 0;
@@ -22,7 +22,9 @@ void loop() {
     Serial.print("Step: ");
     Serial.println(stepIndex);
     Serial.print("Bar: ");
-    Serial.println(barIndex);
+    Serial.println(barIndex+1);
+    Serial.print("Beat: ");
+    Serial.println(stepIndex/4+1);
     if (stepIndex <= 14) {
       stepIndex++;
     }
