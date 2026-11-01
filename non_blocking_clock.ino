@@ -22,9 +22,9 @@ void loop() {
     Serial.print("Step: ");
     Serial.println(stepIndex);
     Serial.print("Bar: ");
-    Serial.println(barIndex+1);
+    Serial.println(barIndex + 1);
     Serial.print("Beat: ");
-    Serial.println(stepIndex/4+1);
+    Serial.println(stepIndex / subdivisionsPerBeat + 1);
     if (stepIndex <= 14) {
       stepIndex++;
     }
