@@ -1,12 +1,15 @@
 unsigned long currentMillis = 0;
 unsigned long lastTick = 0;
 unsigned long tickCount = 0;
-const unsigned long stepInterval = 125;
+const unsigned long tempo = 120;
+const unsigned long subdivisions = 4;
+unsigned long stepInterval = 0;
 unsigned long stepIndex = 0;
 unsigned long barIndex = 0;
 
 void setup() {
   Serial.begin(9600);
+  stepInterval = 60000/tempo/subdivisions;
 }
 
 void loop() {
